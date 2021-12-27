@@ -16,17 +16,13 @@ Automatify is a web consisting of 3 broad tools developed to ease the workflow i
 **Speech recognition:** this tool offers the output of text through voice input
 
 ### Implemenation :-
-The implementaion is fairly simple as Flask is used to build this webapp. We have expanded our knowledge in python, javascript, css and other requisites
-as we required them while building this web app
+The implementaion is fairly simple as Flask is used to build this webapp. We have expanded our knowledge in python, javascript, css and other requisites as we required them while building this web app. We used javascript and python to program the backend of the project and html css and javascript to program the front or the user ui of the webapp
 
 ### Setup:- 
 libraries used consists of flask for building basic Flask structure .... SpeechRecognition for Speech Recognition tool, googletrans for Language translator and PIL and pytesseract for Image text extraction tool
 
-install them by 
+Install these by 
   > `pip install requirements.txt`
 
 ### Working:-
-The user ends up in main webpage which then leads to different routes for each tool and then sub routes for each feature in the tool
-
-### Outcomes:-
-we learned this and that while doing this project ....
+The user ends up in main webpage which then leads to different routes for each tool and then sub routes for each feature in the tool 
