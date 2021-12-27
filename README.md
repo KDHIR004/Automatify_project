@@ -21,7 +21,7 @@ The implementaion is fairly simple as Flask is used to build this webapp. We hav
 ### Setup:- 
 libraries used consists of flask for building basic Flask structure .... SpeechRecognition for Speech Recognition tool, googletrans for Language translator and PIL and pytesseract for Image text extraction tool
 
-Install these by 
+Install these Libraroes required to run the app by 
   > `pip install requirements.txt`
 
 ### Working:-
