@@ -11,13 +11,13 @@ Automatify is a web consisting of 3 broad tools developed to ease the workflow i
 
 ### Implemenation :-
 The implementaion is fairly simple as Flask is used to build this webapp. We have expanded our knowledge in python, javascript, css and other requisites as we required them while building this web app. We used javascript and python to program the backend of the project and Bootstrap css and javascript to program the front or the user ui of the webapp
-The routes
-`/`: is for homepage or index of webapp
-`/text_extraction`: is for image extraction tool
-`/speech`: is for the index of Speech recognition tool
-`/translator`: is for the translator tool
-`/wavfile`: is for the speech recognition via file upload .wav file being only supported format
-`/mic`: is for the speech recognition via microphone input from the browser
+The routes:
+- `/`: is for homepage or index of webapp
+- `/text_extraction`: is for image extraction tool
+- `/speech`: is for the index of Speech recognition tool
+- `/translator`: is for the translator tool
+- `/wavfile`: is for the speech recognition via file upload .wav file being only supported format
+- `/mic`: is for the speech recognition via microphone input from the browser
 
 
 ### Setup:-
