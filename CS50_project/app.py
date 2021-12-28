@@ -14,10 +14,10 @@ def index():
 
 @app.route("/text_extraction", methods=['GET','POST'])
 def text():
-    # initializing the speech text
+    # initializing the image text
     text = ""
     if request.method == "POST":
-        # sanity check and extraction of text from audio file        
+        # sanity check and extraction of text from image file        
         file = request.files["file"]    
         try:
             image = Image.open(file)
