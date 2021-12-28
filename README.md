@@ -24,7 +24,9 @@ Libraries used consists of flask for building basic Flask structure .... SpeechR
 Install these Libraries required to run the app by 
   > `pip install requirements.txt`
   
-Add the path to your tesseract installation in windows for it to work on top of code in app.py  
+Add the path to your tesseract installation in windows for it to work on top of code in app.py 
+  > `pytesseract.pytesseract.tesseract_cmd = 'C://PATH'`
+
 
 ### Working:-
 The user ends up in main webpage which then leads to different routes for each tool and then sub routes for each feature in the tool 
