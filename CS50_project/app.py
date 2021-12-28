@@ -4,7 +4,7 @@ from googletrans import Translator
 import pytesseract
 from PIL import Image
 
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR'
+pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
 app = Flask(__name__)
 
