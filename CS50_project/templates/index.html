@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>automatify</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/style.css') }}">
+    </head>
+    <body>
+        <header>
+            <div class="content">
+            
+            <nav>
+                <img src="{{url_for('static', filename='logo.png')}}">
+                <ul class="nav_site">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/speech">Speech Recognition</a></li>
+                    <li><a href="/translator">Translator</a></li>
+                    <li><a href="/text_extraction">Text Extraction</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <video autoplay muted loop class="myVideo">
+                <source src="{{ url_for('static', filename='automatify.mp4') }}" type="video/mp4">
+            </video>
+            </div>
+            
+        </header>
+    </section>
+    </body>
+</html>

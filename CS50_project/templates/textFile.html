@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Text Extraction
+        </title>
+    </head>
+    <body>
+        <div id = "container">
+        <h1>Image Text Extraction</h1>
+        <form method="POST" enctype="multipart/form-data" action="/text_extraction">
+            <input type="file" name="file">
+            <input type = "submit" value="Extract" class = "btn btn-primary"> 
+        </form>
+        </div>
+
+        {% if text != "" %}
+        <div id = "transcript">
+            <h1>Extracted Text</h1>
+            <p>
+                {{ text }}
+            </p>                
+        </div>
+        {% endif %}
+    </body>       
+</html>

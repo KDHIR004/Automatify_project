@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block meta %} <meta name="description" content="speech">{% endblock %}
+
+{% block title %} File input {% endblock %}
+
+{% block body %}
+
+        <div id = "container">
+        <h1>Speech Recognizer via File</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type = "submit" value="Extract" class = "btn btn-primary"> 
+        </form>
+        </div>
+
+        {% if speech != "" %}
+        <div id = "transcript">
+            <h1>Extracted Text</h1>
+            <p>
+                {{ speech }}
+            </p>                
+        </div>
+        {% endif %}
+        
+{% endblock %}

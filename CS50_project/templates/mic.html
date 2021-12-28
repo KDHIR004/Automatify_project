@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block meta %} <meta name="description" content="speech">{% endblock %}
+{% block title %} input through microphone {% endblock %}
+
+{% block body %}
+
+        <h1>Input through mic</h1>
+        <p>Click below to start speaking</p>
+        <button type = "button" onclick="startSpeechRecognition()" class = "btn btn-success">Speak</button>
+        <button type = "button" onclick="recognition.stop()" class = "btn btn-danger">Stop</button>
+        <p id="action"></p>
+        <div id = "output" class="hide"></div>
+        <script>
+            function startSpeechRecognition() {
+                var output = document.getElementById("output");
+                var action = document.getElementById("action");
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
+
+                recognition.onstart = function() {
+                    action.innerHTML = "Listening"
+                }
+
+                recognition.onspeechend = function() {
+                    action.innerHTML = "Done!"
+                    recognition.stop()
+                }
+                recognition.onresult = function(event) {
+                    var transcript = event.results[0][0].transcript;
+                    output.innerHTML = "<h1>Extracted Text</h1>" + "<br>" + transcript;
+                    output.classList.remove("hide"); 
+                };
+
+                recognition.start();
+            }
+        </script>
+        
+{% endblock %}
