@@ -1,5 +1,9 @@
 # Automatify
 
+### Contributers:
+- Kirti ([KDHIR004](https://github.com/KDHIR004))
+- Chittesh ([Chittesh1999](https://github.com/Chittesh1999))
+
 #### Video Demo:  https://youtu.be/dQw4w9WgXcQ
 
 #### Description:
