@@ -3,21 +3,33 @@ import speech_recognition as sr
 from googletrans import Translator
 import pytesseract
 from PIL import Image
-
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///text.db"
+#database
+db= SQLAlchemy(app)
 
+#create db model
+class text(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    txt = db.Column(db.String(200), nullable=False)
+    date_created = db.Column(db.DateTime, default=datetime.utcnow)
+    # create a function  to string  
+    def __repr__(self):
+        return '<Text %r>' % self.id
 @app.route("/", methods=['GET','POST'])
 def index():
     return render_template('index.html')
 
 @app.route("/text_extraction", methods=['GET','POST'])
 def text():
-    # initializing the image text
+    # initializing the speech text
     text = ""
     if request.method == "POST":
-        # sanity check and extraction of text from image file        
+        # sanity check and extraction of text from audio file        
         file = request.files["file"]    
         try:
             image = Image.open(file)
