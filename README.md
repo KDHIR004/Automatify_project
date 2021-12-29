@@ -17,7 +17,7 @@ The routes:
 - `/speech`: This route is for the index of Speech recognition tool where user gets an option of selecting method of speech recognition by either a file or thorugh input by microphone.
 - `/translator`: This route is for the translator tool which takes user to a form which upon submission yields the translated text in the language selected.
 - `/wavfile`: This route is for the speech recognition via file upload .wav file being only supported format which also uses a file submission form same as in text extraction tool.
-- `/mic`: is for the speech recognition via microphone input from the browser which uses java script as we found it difficult to make a recording of user's voice and then send it to the flask backend to process it.
+- `/mic`: This route is for the speech recognition via microphone input from the browser which uses java script as we found it difficult to make a recording of user's voice and then send it to the flask backend to process it.
 
 
 ### Setup:-
