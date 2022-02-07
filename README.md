@@ -31,3 +31,4 @@ Add the path to your tesseract installation in windows for it to work on top of 
   > `pytesseract.pytesseract.tesseract_cmd = 'C://PATH'`
 
 
+
