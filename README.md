@@ -25,7 +25,7 @@ Libraries used consists of flask for building basic Flask structure.
 SpeechRecognition for Speech Recognition tool, googletrans for Language translator and PIL and pytesseract for Image text extraction tool
 
 Install these Libraries required to run the app by
-  > `pip install requirements.txt`
+  > `pip install -r requirements.txt`
 
 Add the path to your tesseract installation in windows for it to work on top of code in app.py
   > `pytesseract.pytesseract.tesseract_cmd = 'C://PATH'`
