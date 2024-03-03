@@ -2,8 +2,6 @@
 
 ### Contributers:
 - Kirti ([KDHIR004](https://github.com/KDHIR004))
-- Chittesh ([Chittesh1999](https://github.com/Chittesh1999))
-
 
 #### Description:
 Automatify is a web application consisting of three tools developed to ease day-to-day workflows. Users land on the main webpage, which then leads to different routes for each tool and sub-routes for each feature. The index page has three tools in the top right corner: Speech Recognition, Translator, Text Extraction, and a Contact tool. Clicking on Speech Recognition takes you to the tool's index, where you can choose between using a file or microphone input. Clicking on Translator takes you to a form where you can enter text and choose the desired language. Clicking on Text Extraction takes you to a file form for uploading an image, yielding the extracted text upon submission.
